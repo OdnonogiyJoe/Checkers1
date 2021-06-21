@@ -1,0 +1,18 @@
+﻿<Window x:Class="Checkers.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Checkers"
+        mc:Ignorable="d"
+        Title="local shashechnik" SizeToContent="WidthAndHeight" WindowStartupLocation ="CenterScreen">
+    <Grid>
+        <Canvas x:Name="Canvas" Width="700" Height="800" Focusable="True" KeyDown="DKeyDown" KeyUp="UKeyUp">
+            <Label Name="scoreText" Content="Score: 0" FontSize="20" 
+                   FontWeight="Bold" 
+                   Foreground="Gold" 
+                   FontFamily="Segoe UI Black"/>
+            <Rectangle Name="player" Height="80" Width="56" Fill="Black" Canvas.Bottom="0" Canvas.Left="320" Canvas.Top="700" />
+        </Canvas>
+    </Grid>
+</Window>
